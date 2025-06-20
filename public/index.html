@@ -65,7 +65,9 @@
     <section class="bg-uag-beige py-16">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <div class="mb-6">
-                <span class="bg-uag-aqua text-white font-semibold text-sm tracking-wide px-5 py-2 rounded-full inline-block">Financial Advisors Managing $30M+ AUM at Broker-Dealers</span>
+                <span class="bg-green-200 text-white font-semibold text-sm tracking-wide px-5 py-1.5 rounded-full inline-block" style="background-color: #A7F3D0; color: #166534;">
+                    Financial Advisors Managing $30M+ AUM at Broker-Dealers
+                </span>
             </div>
             <h1 class="font-playfair text-5xl md:text-6xl font-bold text-uag-navy mb-6 leading-tight">
                 Your Broker-Dealer Costs Are Eating 15-25% of Your Income
@@ -73,7 +75,7 @@
             <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto font-muli">
                 Calculate the TRUE cost of your current platform vs. UAG's transparent model
             </p>
-            <a href="#calculator" class="bg-uag-aqua text-white px-8 py-4 rounded-lg text-lg font-semibold cta-button inline-block">
+            <a href="#calculator" class="bg-uag-aqua text-white px-8 py-4 rounded-lg text-lg font-semibold cta-button inline-block" style="background-color: #FF9337;">
                 Calculate My True Platform Costs
             </a>
         </div>
@@ -97,10 +99,10 @@
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">Calculate the TRUE cost of your current platform vs. UAG's transparent model</p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto bg-pink-warning rounded-xl p-4">
                 <!-- Input Section -->
                 <div class="bg-white p-8 rounded-xl shadow-lg border">
-                    <h3 class="font-playfair text-2xl font-semibold text-uag-navy mb-6">Your Current Situation</h3>
+                    <h3 class="font-playfair text-2xl font-semibold text-uag-navy mb-6">Enter Your Current Situation</h3>
                     
                     <div class="space-y-6">
                         <div>
@@ -141,30 +143,47 @@
                 <!-- Results Section -->
                 <div class="bg-gray-50 p-8 rounded-xl">
                     <h3 class="font-playfair text-2xl font-semibold text-uag-navy mb-6">Your Shocking Reality</h3>
-                    
                     <div class="space-y-6">
                         <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
                             <p class="text-sm text-red-700 font-semibold">Annual Platform Fees</p>
-                            <p class="text-3xl font-bold text-red-600" id="annualFees">$125,000</p>
+                            <p class="text-3xl font-bold text-red-600" id="annualFees">$1,250</p>
                         </div>
-                        
-                        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-                            <p class="text-sm text-red-700 font-semibold">Total Contract Cost</p>
-                            <p class="text-3xl font-bold text-red-600" id="totalCost">$875,000</p>
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                            <p class="text-sm text-blue-700 font-semibold">Your Current Payout</p>
+                            <p class="text-3xl font-bold text-blue-600" id="currentPayout">$324,188</p>
                         </div>
-                        
                         <div class="bg-green-50 border-l-4 border-uag-aqua p-4 rounded">
-                            <p class="text-sm text-green-700 font-semibold">UAG Annual Savings</p>
-                            <p class="text-3xl font-bold text-uag-aqua" id="uagSavings">$62,500</p>
+                            <p class="text-sm text-green-700 font-semibold">UAG Annual Payout</p>
+                            <p class="text-3xl font-bold text-uag-aqua" id="uagPayout">$425,000</p>
                         </div>
-                        
+                        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
+                            <p class="text-sm text-yellow-700 font-semibold">Annual Income Increase</p>
+                            <p class="text-3xl font-bold text-yellow-600" id="incomeIncrease">$100,812</p>
+                        </div>
                         <div class="bg-uag-aqua text-white p-4 rounded-lg text-center">
-                            <p class="text-sm font-semibold">Independence Timeline</p>
-                            <p class="text-xl font-bold" id="timeline">7 years remaining</p>
+                            <p class="text-sm font-semibold">Percentage Increase</p>
+                            <p class="text-xl font-bold" id="percentageIncrease">31%</p>
                         </div>
-                        
-                        <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
-                            <p class="text-sm text-yellow-800"><i class="fas fa-lightbulb mr-2 text-yellow-600"></i><strong>Liberation Insight:</strong> Most advisors don't realize they're paying equivalent to a luxury car payment in platform fees annually.</p>
+                    </div>
+                    <div class="mt-8 space-y-6">
+                        <h4 class="font-playfair text-xl font-semibold text-uag-navy mb-2">Total Over Contract Length (<span id="contractYears">7</span> years)</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                                <p class="text-sm text-red-700 font-semibold">Total Platform Fees</p>
+                                <p class="text-2xl font-bold text-red-600" id="totalPlatformFees">$8,750</p>
+                            </div>
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                                <p class="text-sm text-blue-700 font-semibold">Total Current Payout</p>
+                                <p class="text-2xl font-bold text-blue-600" id="totalCurrentPayout">$2,269,316</p>
+                            </div>
+                            <div class="bg-green-50 border-l-4 border-uag-aqua p-4 rounded">
+                                <p class="text-sm text-green-700 font-semibold">Total UAG Payout</p>
+                                <p class="text-2xl font-bold text-uag-aqua" id="totalUagPayout">$2,975,000</p>
+                            </div>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
+                                <p class="text-sm text-yellow-700 font-semibold">Total Income Increase</p>
+                                <p class="text-2xl font-bold text-yellow-600" id="totalIncomeIncrease">$705,684</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -748,25 +767,37 @@
 
     <script>
         function calculateCosts() {
+            const avgManagementFee = 0.01; // 1%
+            const uagPayoutRate = 0.85; // 85%
             const aum = parseFloat(document.getElementById('aum').value.replace(/,/g, '')) || 50000000;
-            const platformFee = parseFloat(document.getElementById('platformFee').value) || 0.25;
-            const payout = parseFloat(document.getElementById('payout').value) || 65;
+            const platformFeePercent = parseFloat(document.getElementById('platformFee').value) || 0.25;
+            const payoutPercent = parseFloat(document.getElementById('payout').value) || 65;
             const contractLength = parseFloat(document.getElementById('contractLength').value) || 7;
-            
-            const annualPlatformFees = aum * (platformFee / 100);
-            const totalContractCost = annualPlatformFees * contractLength;
-            const uagSavings = annualPlatformFees * 0.5; // Assuming 50% savings with UAG
-            
-            document.getElementById('annualFees').textContent = '$' + annualPlatformFees.toLocaleString();
-            document.getElementById('totalCost').textContent = '$' + totalContractCost.toLocaleString();
-            document.getElementById('uagSavings').textContent = '$' + uagSavings.toLocaleString();
-            document.getElementById('timeline').textContent = contractLength + ' years remaining';
-            
-            // Add animation effect
-            document.querySelector('.bg-gray-50').style.background = 'linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%)';
-            setTimeout(() => {
-                document.querySelector('.bg-gray-50').style.background = '';
-            }, 1000);
+
+            const grossRevenue = aum * avgManagementFee;
+            const platformFees = grossRevenue * (platformFeePercent / 100);
+            const currentNetRevenue = grossRevenue - platformFees;
+            const currentPayout = currentNetRevenue * (payoutPercent / 100);
+            const uagPayout = grossRevenue * uagPayoutRate;
+            const annualIncomeIncrease = uagPayout - currentPayout;
+            const percentageIncrease = currentPayout > 0 ? ((uagPayout / currentPayout) - 1) * 100 : 0;
+
+            // Totals over contract length
+            const totalPlatformFees = platformFees * contractLength;
+            const totalCurrentPayout = currentPayout * contractLength;
+            const totalUagPayout = uagPayout * contractLength;
+            const totalIncomeIncrease = annualIncomeIncrease * contractLength;
+
+            document.getElementById('annualFees').textContent = '$' + platformFees.toLocaleString(undefined, {maximumFractionDigits: 0});
+            document.getElementById('currentPayout').textContent = '$' + currentPayout.toLocaleString(undefined, {maximumFractionDigits: 0});
+            document.getElementById('uagPayout').textContent = '$' + uagPayout.toLocaleString(undefined, {maximumFractionDigits: 0});
+            document.getElementById('incomeIncrease').textContent = '$' + annualIncomeIncrease.toLocaleString(undefined, {maximumFractionDigits: 0});
+            document.getElementById('percentageIncrease').textContent = Math.round(percentageIncrease) + '%';
+            document.getElementById('contractYears').textContent = contractLength;
+            document.getElementById('totalPlatformFees').textContent = '$' + totalPlatformFees.toLocaleString(undefined, {maximumFractionDigits: 0});
+            document.getElementById('totalCurrentPayout').textContent = '$' + totalCurrentPayout.toLocaleString(undefined, {maximumFractionDigits: 0});
+            document.getElementById('totalUagPayout').textContent = '$' + totalUagPayout.toLocaleString(undefined, {maximumFractionDigits: 0});
+            document.getElementById('totalIncomeIncrease').textContent = '$' + totalIncomeIncrease.toLocaleString(undefined, {maximumFractionDigits: 0});
         }
         
         // Smooth scrolling for anchor links
