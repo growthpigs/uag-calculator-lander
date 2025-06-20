@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Advisor Liberation Calculator - Discover Your True Platform Cost</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Muli:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-muli { font-family: 'Muli', sans-serif; }
+        .bg-uag-navy { background-color: #3E4C63; }
+        .text-uag-navy { color: #3E4C63; }
+        .bg-uag-aqua { background-color: #1abbae; }
+        .text-uag-aqua { color: #1abbae; }
+        .bg-uag-beige { background-color: #F6F6F6; }
+        .hover\:text-black:hover { color: #000000; }
+        .text-mid-gray { color: #6B7280; }
+        .bg-pink-warning { background-color: #F3E8FF; }
+        .border-pink-warning { border-color: #E879F9; }
+        .text-pink-warning { color: #BE185D; }
+        .calculator-input { transition: all 0.3s ease; }
+        .calculator-input:focus { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0, 219, 202, 0.2); }
+        .cta-button { transition: all 0.3s ease; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0, 219, 202, 0.3); }
+        .warning-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+        .testimonial-card { transition: all 0.3s ease; }
+        .testimonial-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(62, 76, 99, 0.1); }
+    </style>
+</head>
+<body class="font-muli bg-white">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-uag-navy py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://p129.p0.n0.cdn.zight.com/items/Z4uBXyDx/ec45a471-dc92-4b14-b43d-41d1bdebc3f5.jpg?v=20b46b5623111d49e6a055ca491106f3" alt="United Advisor Group" class="h-10 w-auto mr-3" style="height: 46px;">
+                <span class="text-white font-semibold text-lg">United Advisor Group</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#calculator" class="text-white hover:text-uag-aqua transition-colors">Calculator</a>
+                <a href="#comparison" class="text-white hover:text-uag-aqua transition-colors">Compare</a>
+                <a href="#about" class="text-white hover:text-uag-aqua transition-colors">About UAG</a>
+                <a href="#contact" class="text-white hover:text-uag-aqua transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- As Featured In Bar -->
+    <div class="bg-white py-3 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <span class="text-uag-aqua font-semibold mr-4">As Featured In:</span>
+            <a href="#media-coverage" class="text-mid-gray hover:text-black transition-colors mx-3 font-medium">InvestmentNews</a>
+            <a href="#media-coverage" class="text-mid-gray hover:text-black transition-colors mx-3 font-medium">ThinkAdvisor</a>
+            <a href="#media-coverage" class="text-mid-gray hover:text-black transition-colors mx-3 font-medium">WealthManagement.com</a>
+            <a href="#media-coverage" class="text-mid-gray hover:text-black transition-colors mx-3 font-medium">Citywire</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-uag-beige py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="mb-6">
+                <span class="bg-uag-aqua text-white font-semibold text-sm tracking-wide px-5 py-2 rounded-full inline-block">Financial Advisors Managing $30M+ AUM at Broker-Dealers</span>
+            </div>
+            <h1 class="font-playfair text-5xl md:text-6xl font-bold text-uag-navy mb-6 leading-tight">
+                Your Broker-Dealer Costs Are Eating 15-25% of Your Income
+            </h1>
+            <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto font-muli">
+                Calculate the TRUE cost of your current platform vs. UAG's transparent model
+            </p>
+            <a href="#calculator" class="bg-uag-aqua text-white px-8 py-4 rounded-lg text-lg font-semibold cta-button inline-block">
+                Calculate My True Platform Costs
+            </a>
+        </div>
+    </section>
+
+    <!-- Partner Logos Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-600 mb-6 font-semibold">Trusted by Advisors from Leading Institutions</p>
+            <div class="flex justify-center items-center">
+                <img src="https://p129.p0.n0.cdn.zight.com/items/X6uLP08n/a81d214e-a79a-45ed-b4f5-91a7e11f70a0.png?v=58a78ff244e8f2463ba4ff91a09f9ee3" alt="Partner Institutions" class="max-w-full h-auto opacity-70">
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-uag-navy mb-4">The Advisor Liberation Calculator</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Calculate the TRUE cost of your current platform vs. UAG's transparent model</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Input Section -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border">
+                    <h3 class="font-playfair text-2xl font-semibold text-uag-navy mb-6">Your Current Situation</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Assets Under Management (AUM)</label>
+                            <div class="relative">
+                                <span class="absolute left-3 top-3 text-gray-500 text-lg">$</span>
+                                <input type="text" id="aum" class="calculator-input w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-uag-aqua focus:outline-none text-lg" placeholder="50000000" value="50000000">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Platform Fee Percentage</label>
+                            <div class="relative">
+                                <input type="text" id="platformFee" class="calculator-input w-full pr-8 pl-4 py-3 border-2 border-gray-300 rounded-lg focus:border-uag-aqua focus:outline-none text-lg" placeholder="0.25" value="0.25">
+                                <span class="absolute right-3 top-3 text-gray-500 text-lg">%</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Current Payout Percentage</label>
+                            <div class="relative">
+                                <input type="text" id="payout" class="calculator-input w-full pr-8 pl-4 py-3 border-2 border-gray-300 rounded-lg focus:border-uag-aqua focus:outline-none text-lg" placeholder="65" value="65">
+                                <span class="absolute right-3 top-3 text-gray-500 text-lg">%</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Contract Length (Years)</label>
+                            <input type="text" id="contractLength" class="calculator-input w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-uag-aqua focus:outline-none text-lg" placeholder="7" value="7">
+                        </div>
+                        
+                        <button onclick="calculateCosts()" class="w-full bg-uag-aqua text-white py-4 rounded-lg text-lg font-semibold cta-button">
+                            <i class="fas fa-calculator mr-2"></i>Calculate My Liberation Potential
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Results Section -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="font-playfair text-2xl font-semibold text-uag-navy mb-6">Your Shocking Reality</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                            <p class="text-sm text-red-700 font-semibold">Annual Platform Fees</p>
+                            <p class="text-3xl font-bold text-red-600" id="annualFees">$125,000</p>
+                        </div>
+                        
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                            <p class="text-sm text-red-700 font-semibold">Total Contract Cost</p>
+                            <p class="text-3xl font-bold text-red-600" id="totalCost">$875,000</p>
+                        </div>
+                        
+                        <div class="bg-green-50 border-l-4 border-uag-aqua p-4 rounded">
+                            <p class="text-sm text-green-700 font-semibold">UAG Annual Savings</p>
+                            <p class="text-3xl font-bold text-uag-aqua" id="uagSavings">$62,500</p>
+                        </div>
+                        
+                        <div class="bg-uag-aqua text-white p-4 rounded-lg text-center">
+                            <p class="text-sm font-semibold">Independence Timeline</p>
+                            <p class="text-xl font-bold" id="timeline">7 years remaining</p>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                            <p class="text-sm text-yellow-800"><i class="fas fa-lightbulb mr-2 text-yellow-600"></i><strong>Liberation Insight:</strong> Most advisors don't realize they're paying equivalent to a luxury car payment in platform fees annually.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Call CTA Button -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <a href="#coffee-call" class="bg-uag-navy text-white px-12 py-6 rounded-xl text-xl font-bold cta-button inline-block">
+                ☕ Schedule Your Coffee Call with Ray
+            </a>
+        </div>
+    </section>
+
+    <!-- Pink Warning Box -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-pink-warning border border-pink-warning rounded-lg p-6 text-center warning-pulse">
+                <h3 class="text-pink-warning font-bold text-lg mb-2">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>WARNING
+                </h3>
+                <p class="text-gray-700 font-semibold">
+                    This calculation has caused 127+ advisors to immediately question their current arrangements
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Break Free Section -->
+    <section class="py-16 bg-uag-beige">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="font-playfair text-4xl font-bold text-uag-navy mb-6">Ready to Break Free from the Golden Handcuffs?</h2>
+            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+                Join 127+ advisors who've calculated their platform costs and discovered the UAG advantage.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="font-playfair text-xl font-semibold text-uag-navy mb-4">Immediate Action:</h3>
+                    <ol class="text-left space-y-3 text-gray-700">
+                        <li>1. Calculate your platform costs above</li>
+                        <li>2. Schedule call with Ray</li>
+                        <li>3. Review UAG partnership details</li>
+                        <li>4. Make informed decision</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="font-playfair text-xl font-semibold text-uag-navy mb-4">What Happens Next:</h3>
+                    <ul class="text-left space-y-3 text-gray-700">
+                        <li>• Confidential consultation with Ray</li>
+                        <li>• Custom transition timeline</li>
+                        <li>• Introduction to UAG partners</li>
+                        <li>• Complete support throughout</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <a href="#coffee-call" class="bg-uag-aqua text-white px-8 py-4 rounded-lg text-lg font-semibold cta-button inline-block">
+                    <i class="fas fa-phone mr-2"></i>Schedule My Coffee Call with Ray
+                </a>
+                <p class="text-sm text-gray-600 mt-4">*All consultations are confidential and pressure-free</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="comparison" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-uag-navy mb-4">UAG vs. Traditional Platforms</h2>
+                <p class="text-xl text-gray-600">The side-by-side reality that's changing everything</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    <thead>
+                        <tr class="bg-gray-50">
+                            <th class="px-6 py-4 text-left font-playfair text-lg text-uag-navy">Feature</th>
+                            <th class="px-6 py-4 text-center font-playfair text-lg bg-uag-aqua text-white">UAG Partnership</th>
+                            <th class="px-6 py-4 text-center font-playfair text-lg text-uag-navy">Traditional Platforms</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 font-semibold">Upfront Fees</td>
+                            <td class="px-6 py-4 text-center text-uag-aqua font-bold">
+                                <i class="fas fa-check-circle text-uag-aqua mr-2"></i>$0
+                            </td>
+                            <td class="px-6 py-4 text-center text-red-600 font-bold">
+                                <i class="fas fa-times-circle text-red-500 mr-2"></i>$500K - $2M+
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">Contract Length</td>
+                            <td class="px-6 py-4 text-center text-uag-aqua font-bold">
+                                <i class="fas fa-check-circle text-uag-aqua mr-2"></i>Flexible
+                            </td>
+                            <td class="px-6 py-4 text-center text-red-600 font-bold">
+                                <i class="fas fa-times-circle text-red-500 mr-2"></i>7-9 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold">Platform Fees</td>
+                            <td class="px-6 py-4 text-center text-uag-aqua font-bold">
+                                <i class="fas fa-check-circle text-uag-aqua mr-2"></i>Revenue-Based
+                            </td>
+                            <td class="px-6 py-4 text-center text-red-600 font-bold">
+                                <i class="fas fa-times-circle text-red-500 mr-2"></i>0.15% - 0.50%
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">Voting Rights</td>
+                            <td class="px-6 py-4 text-center text-uag-aqua font-bold">
+                                <i class="fas fa-check-circle text-uag-aqua mr-2"></i>Equal Partner
+                            </td>
+                            <td class="px-6 py-4 text-center text-red-600 font-bold">
+                                <i class="fas fa-times-circle text-red-500 mr-2"></i>None
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold">Brand Ownership</td>
+                            <td class="px-6 py-4 text-center text-uag-aqua font-bold">
+                                <i class="fas fa-check-circle text-uag-aqua mr-2"></i>Keep Your Brand
+                            </td>
+                            <td class="px-6 py-4 text-center text-red-600 font-bold">
+                                <i class="fas fa-times-circle text-red-500 mr-2"></i>Restricted
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">Proprietary Products</td>
+                            <td class="px-6 py-4 text-center text-uag-aqua font-bold">
+                                <i class="fas fa-check-circle text-uag-aqua mr-2"></i>No Quotas
+                            </td>
+                            <td class="px-6 py-4 text-center text-red-600 font-bold">
+                                <i class="fas fa-times-circle text-red-500 mr-2"></i>Required Sales
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold">Exit Flexibility</td>
+                            <td class="px-6 py-4 text-center text-uag-aqua font-bold">
+                                <i class="fas fa-check-circle text-uag-aqua mr-2"></i>Immediate
+                            </td>
+                            <td class="px-6 py-4 text-center text-red-600 font-bold">
+                                <i class="fas fa-times-circle text-red-500 mr-2"></i>Clawback Penalties
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-8 bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+                <h3 class="font-playfair text-xl font-bold text-red-700 mb-2">The Golden Handcuff Reality:</h3>
+                <p class="text-red-700">A $1M upfront bonus at 0.25% platform fees costs you $1.6M+ over 7 years on $100M AUM. You're actually paying them to trap you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Recognition / Media Coverage -->
+    <section id="media-coverage" class="py-16 bg-uag-beige">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-uag-navy mb-4">Industry Recognition</h2>
+                <p class="text-xl text-gray-600">UAG's launch and growth covered by leading financial publications</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="font-semibold text-uag-navy mb-2">InvestmentNews</h3>
+                    <p class="text-gray-600 text-sm mb-4">"United Advisor Group debuts as a new RIA aggregator with Goldman Sachs custody partnership."</p>
+                    <a href="#" class="text-uag-aqua font-semibold text-sm">Read Article →</a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="font-semibold text-uag-navy mb-2">ThinkAdvisor</h3>
+                    <p class="text-gray-600 text-sm mb-4">"New RIA aggregator launches with $750M AUM and innovative single-tier partnership model."</p>
+                    <a href="#" class="text-uag-aqua font-semibold text-sm">Read Article →</a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="font-semibold text-uag-navy mb-2">WealthManagement.com</h3>
+                    <p class="text-gray-600 text-sm mb-4">"RIA Aggregator chooses Goldman Sachs for custody, emphasizing advisor independence."</p>
+                    <a href="#" class="text-uag-aqua font-semibold text-sm">Read Article →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Planning & Support -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-playfair text-3xl font-bold text-uag-navy mb-6">Strategic Planning & Support</h2>
+                    <p class="text-gray-700 mb-8">Our team provides comprehensive support for your transition and ongoing success. From strategic planning to operational support, we're here to ensure your independence doesn't mean going it alone.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full p-2 mr-4 mt-1">
+                                <i class="fas fa-chart-line text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-uag-navy">Comprehensive transition planning</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full p-2 mr-4 mt-1">
+                                <i class="fas fa-rocket text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-uag-navy">Ongoing business development and marketing assistance</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full p-2 mr-4 mt-1">
+                                <i class="fas fa-cogs text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-uag-navy">Technology integration and training</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full p-2 mr-4 mt-1">
+                                <i class="fas fa-shield-alt text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-uag-navy">Compliance and regulatory support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="https://p129.p0.n0.cdn.zight.com/items/geuQNqyj/ec2d9e91-8b4f-4a8b-9acd-817efbf01c25.jpg?v=a8a34347e8a7eb984cb25666d7b8b9a2" alt="Strategic Planning" class="rounded-xl shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern, Collaborative Environment -->
+    <section class="py-16 bg-uag-beige">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://p129.p0.n0.cdn.zight.com/items/jkuBwDXz/7000f818-745b-4a89-91dc-b83f5f3e9446.jpg?v=2f161a960d3378ed22d0be80ddecd37e" alt="Modern Collaborative Environment" class="rounded-xl shadow-lg w-full">
+                </div>
+                
+                <div>
+                    <h2 class="font-playfair text-3xl font-bold text-uag-navy mb-6">Modern, Collaborative Environment</h2>
+                    <p class="text-gray-700 mb-8">Join a growing community of 44+ advisors who've made the transition to true independence. Our collaborative approach means you get the benefits of a large firm with the autonomy of independence.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-uag-aqua">44+</div>
+                            <div class="text-sm text-gray-600">Partner Advisors</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-uag-aqua">$1B+</div>
+                            <div class="text-sm text-gray-600">Assets Under Management</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-uag-aqua">20%</div>
+                            <div class="text-sm text-gray-600">Growth Every 60 Days</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-uag-aqua">100%</div>
+                            <div class="text-sm text-gray-600">Partner Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ray Gettins Authority Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-playfair text-3xl font-bold text-uag-navy mb-6">Meet Ray Gettins</h2>
+                    <h3 class="text-xl font-semibold text-uag-aqua mb-4">Director, United Advisor Group</h3>
+                    
+                    <div class="space-y-4 text-gray-700">
+                        <p>With over 25 years in the financial services industry, Ray brings unparalleled expertise in helping advisors transition to true independence.</p>
+                        
+                        <div class="grid grid-cols-1 gap-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-graduation-cap text-uag-aqua mr-3"></i>
+                                <span>Miami University - Diplomacy & Foreign Affairs, Economics</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-uag-aqua mr-3"></i>
+                                <span>Certified Retirement Counselor (CRC)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-chart-line text-uag-aqua mr-3"></i>
+                                <span>Series 6, 63, 65 Securities Registrations</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-uag-aqua mr-3"></i>
+                                <span>44+ Advisors Successfully Transitioned</span>
+                            </div>
+                        </div>
+                        
+                        <blockquote class="border-l-4 border-uag-aqua pl-4 italic text-gray-600">
+                            "My mission is simple: help advisors achieve true independence without sacrificing the support and infrastructure they need to serve clients at the highest level."
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://p129.p0.n0.cdn.zight.com/items/NQumP1ly/d8e17d43-3578-4f40-a4a4-b2e50cdd8494.jpeg?v=5432e2efd60d4d518c17bd340caf4e08" alt="Ray Gettins" class="rounded-xl shadow-lg mx-auto" style="width: 60%; height: auto;">
+                    <div class="mt-6">
+                        <a href="#coffee-call" class="bg-uag-aqua text-white px-6 py-3 rounded-lg font-semibold cta-button inline-block">
+                            Schedule Coffee Call with Ray
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 bg-uag-beige">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-uag-navy mb-4">Success Stories</h2>
+                <p class="text-xl text-gray-600">Real advisors, real results, real independence</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-uag-aqua rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">MJ</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-uag-navy">Michael Johnson</h3>
+                            <p class="text-sm text-gray-600">Former LPL Advisor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"After calculating my platform fees, I realized I was paying $85,000 annually. UAG's model saved me $60,000 in the first year alone."</p>
+                    <div class="text-uag-aqua font-semibold">$60,000 Annual Savings</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-uag-aqua rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">SC</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-uag-navy">Sarah Chen</h3>
+                            <p class="text-sm text-gray-600">Former Raymond James</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"The transition was seamless. No re-papering clients, Goldman Sachs custody, and I kept my brand. My income increased 38% in year one."</p>
+                    <div class="text-uag-aqua font-semibold">38% Income Increase</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-uag-aqua rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">DM</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-uag-navy">David Martinez</h3>
+                            <p class="text-sm text-gray-600">Former Ameriprise</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"UAG's single-tier partnership means I have a voice in firm decisions. I'm not just an employee anymore - I'm a true partner."</p>
+                    <div class="text-uag-aqua font-semibold">True Partnership</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iron-Clad Guarantees -->
+    <section class="py-16 bg-uag-navy text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold mb-4">Our Iron-Clad Guarantee</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="bg-uag-aqua rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold mb-4">No Risk Analysis</h3>
+                    <p>Your platform fee calculation is completely confidential and obligation-free.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-uag-aqua rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold mb-4">90-Day Satisfaction</h3>
+                    <p>If UAG doesn't exceed your expectations in 90 days, we'll help you find the right solution.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-uag-aqua rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold mb-4">No Pressure Promise</h3>
+                    <p>Ray will never pressure you. This is about education and your best interests.</p>
+                </div>
+            </div>
+            
+            <div class="bg-red-600 rounded-lg p-6 text-center mb-8 warning-pulse">
+                <h3 class="font-bold text-xl mb-2">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>WARNING: Your Current Platform May Not Want You to See This
+                </h3>
+                <p>Most advisors who calculate their true platform costs immediately start questioning their current arrangements. That's exactly why platforms discourage this analysis.</p>
+            </div>
+            
+            <div class="text-center">
+                <a href="#calculator" class="bg-uag-aqua text-white px-8 py-4 rounded-lg text-lg font-semibold cta-button inline-block">
+                    <i class="fas fa-calculator mr-2"></i>Calculate My Platform Costs Now (Risk-Free)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Call Offer Section -->
+    <section id="coffee-call" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-uag-navy mb-4">☕ Your Coffee Call with Ray</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">A no-pressure conversation about your independence journey</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-uag-beige p-8 rounded-xl">
+                    <h3 class="font-playfair text-2xl font-semibold text-uag-navy mb-6">What You'll Get in Your Coffee Call:</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full w-6 h-6 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-uag-navy">Platform Fee Audit ($500 value)</h4>
+                                <p class="text-gray-600 text-sm">Ray personally reviews your current costs and hidden fees</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full w-6 h-6 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-uag-navy">Contract Decoder Session ($750 value)</h4>
+                                <p class="text-gray-600 text-sm">Ray analyzes your current agreement terms and restrictions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full w-6 h-6 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-uag-navy">Liberation Roadmap ($300 value)</h4>
+                                <p class="text-gray-600 text-sm">Custom transition timeline specific to your situation</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full w-6 h-6 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-uag-navy">Independence Blueprint ($300 value)</h4>
+                                <p class="text-gray-600 text-sm">Specific steps to UAG partnership and beyond</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-uag-aqua rounded-full w-6 h-6 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-uag-navy">Ray's Personal Time ($1,200 value)</h4>
+                                <p class="text-gray-600 text-sm">25+ years of industry expertise focused on your needs</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-gray-300">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-gray-500 line-through">Total Value: $3,050</div>
+                            <div class="text-3xl font-bold text-uag-aqua">Your Investment: FREE</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border-2 border-uag-aqua p-8 rounded-xl">
+                    <h3 class="font-playfair text-2xl font-semibold text-uag-navy mb-6">Reserve Your Coffee Call</h3>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                            <p class="text-sm text-yellow-800">
+                                <i class="fas fa-clock mr-2"></i>
+                                <strong>Limited Availability:</strong> Ray only takes 8 Coffee Calls per month due to his advisory commitments
+                            </p>
+                        </div>
+                        
+                        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+                            <p class="text-sm text-red-800">
+                                <i class="fas fa-fire mr-2"></i>
+                                <strong>High Demand:</strong> Most advisors book within 48 hours of calculating their platform costs
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="mailto:rgettins@uagria.com?subject=Coffee Call Request&body=Hi Ray, I calculated my platform costs and would like to schedule a coffee call to discuss UAG partnership opportunities." class="bg-uag-navy text-white px-8 py-4 rounded-lg text-lg font-semibold cta-button inline-block w-full">
+                            ☕ Reserve My Coffee Call with Ray
+                        </a>
+                        
+                        <p class="text-sm text-gray-600 mt-4">
+                            No pressure • No obligation • Pure education<br>
+                            <strong>Next available slots filling up fast</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer id="contact" class="bg-uag-navy text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://p129.p0.n0.cdn.zight.com/items/Z4uBXyDx/ec45a471-dc92-4b14-b43d-41d1bdebc3f5.jpg?v=20b46b5623111d49e6a055ca491106f3" alt="United Advisor Group" class="h-8 w-auto mr-3">
+                        <span class="text-white font-semibold text-lg">United Advisor Group</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Independent but not alone. True partnership for financial advisor independence.</p>
+                    <div class="text-gray-300">
+                        <p>Cincinnati, OH</p>
+                        <p>Goldman Sachs Custody</p>
+                        <p>44+ Partner Advisors</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-playfair text-xl font-semibold mb-4">Contact Ray Gettins</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i>rgettins@uagria.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>(513) 702-7211</p>
+                        <p><i class="fas fa-globe mr-2"></i>www.uagria.com</p>
+                        <p><i class="fas fa-linkedin mr-2"></i>linkedin.com/in/raymond-gettins-crc-490151</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-playfair text-xl font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="#calculator" class="block text-gray-300 hover:text-uag-aqua transition-colors">Platform Calculator</a>
+                        <a href="#comparison" class="block text-gray-300 hover:text-uag-aqua transition-colors">UAG vs Traditional</a>
+                        <a href="#coffee-call" class="block text-gray-300 hover:text-uag-aqua transition-colors">Coffee Call with Ray</a>
+                        <a href="#media-coverage" class="block text-gray-300 hover:text-uag-aqua transition-colors">Media Coverage</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 United Advisor Group. All rights reserved. | <a href="#" class="hover:text-uag-aqua">Privacy Policy</a> | <a href="#" class="hover:text-uag-aqua">Terms of Service</a></p>
+                <p class="mt-2 text-sm">Investment advisory services offered through UAG, a registered investment adviser. Goldman Sachs custody services.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calculateCosts() {
+            const aum = parseFloat(document.getElementById('aum').value.replace(/,/g, '')) || 50000000;
+            const platformFee = parseFloat(document.getElementById('platformFee').value) || 0.25;
+            const payout = parseFloat(document.getElementById('payout').value) || 65;
+            const contractLength = parseFloat(document.getElementById('contractLength').value) || 7;
+            
+            const annualPlatformFees = aum * (platformFee / 100);
+            const totalContractCost = annualPlatformFees * contractLength;
+            const uagSavings = annualPlatformFees * 0.5; // Assuming 50% savings with UAG
+            
+            document.getElementById('annualFees').textContent = '$' + annualPlatformFees.toLocaleString();
+            document.getElementById('totalCost').textContent = '$' + totalContractCost.toLocaleString();
+            document.getElementById('uagSavings').textContent = '$' + uagSavings.toLocaleString();
+            document.getElementById('timeline').textContent = contractLength + ' years remaining';
+            
+            // Add animation effect
+            document.querySelector('.bg-gray-50').style.background = 'linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%)';
+            setTimeout(() => {
+                document.querySelector('.bg-gray-50').style.background = '';
+            }, 1000);
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Auto-calculate on input change
+        document.querySelectorAll('.calculator-input').forEach(input => {
+            input.addEventListener('input', calculateCosts);
+        });
+        
+        // Initial calculation
+        calculateCosts();
+    </script>
+</body>
+</html> 
